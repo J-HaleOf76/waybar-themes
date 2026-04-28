@@ -253,7 +253,10 @@
     "format": " {dynamic}",
     "format-paused": "<span color='#1b1b1b'>{status_icon} {dynamic}</span>",
     "title-len": 20,
-    "dynamic-order": ["artist"],
+    "interval": 1, 
+    "dynamic-order": ["artist", "position", "length"], 
+    "dynamic-importance-order": ["position", "length", "artist"],
+    "tooltip-format": "{player} ({status}):\n{artist} - {title}",  
     "status-icons": {
       "paused": "󰝛"
     },
