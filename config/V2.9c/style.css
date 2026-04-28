@@ -178,10 +178,6 @@ opacity: 1;
   color: @fg;
 }
 
-tooltip {
-  padding: 2px;
-}
-
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   min-width: 12px;
@@ -205,7 +201,7 @@ tooltip {
  padding: 4px;
  background: @bg;
  font-size: 10px;
- border: 1.5px solid alpha(@foreground, 0.6);
+ border: 2px solid @grey;
  border-radius: 8px;
  
 }
