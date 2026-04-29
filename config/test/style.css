@@ -281,7 +281,7 @@ tooltip label {
 
 #mpris {
 margin: 0px;
-padding: 0 15px;
+padding: 0 12px;
 border-radius: 1px;
 border-bottom: 2px solid @red;
 margin-bottom: 1px;
@@ -289,18 +289,16 @@ background-color: transparent;
 opacity: 1;
 color: @fg;
 animation: repeat;
-	animation-name: blink;
+	animation: border-glow 3s linear infinite alternate;
 	animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes blink {
-    to {
-        color: @grey;
-        
-    }
+@keyframes border-glow {
+    from { border-bottom-color: @red; }
+    to   { border-bottom-color: rgba(223, 97, 36, 0.2); } /* @red mit Transparenz */
 }
 
 #network.disconnected,
