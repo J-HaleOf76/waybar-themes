@@ -185,10 +185,6 @@ padding: 0 8px;
 margin-top: 0px;
 }
 
-tooltip {
-  padding: 2px;
-}
-
 
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
@@ -286,7 +282,7 @@ tooltip label {
 #mpris {
 margin: 0px;
 padding: 0 15px;
-border-radius: 0px;
+border-radius: 1px;
 border-bottom: 2px solid @red;
 margin-bottom: 1px;
 background-color: transparent; 
