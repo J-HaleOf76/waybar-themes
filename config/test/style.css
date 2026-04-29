@@ -158,7 +158,7 @@ button:hover {
 #battery,
 #battery.discharging,
 #battery.charging {
-  padding-right: 14px;
+  padding-right: 12px;
 }
 
 #power-profiles-daemon.performance {
