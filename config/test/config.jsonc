@@ -6,9 +6,9 @@
   "passthrough": false,
   "gtk-layer-shell": true,
   "margin-top": 2,
-  "margin-left": 600,
+  "margin-left": 300,
   "margin-bottom": 0,
-  "margin-right": 600,
+  "margin-right": 300,
   "modules-left": [
     "custom/omarchy",
     "custom/separator",
