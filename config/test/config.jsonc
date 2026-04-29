@@ -205,7 +205,7 @@
     }
   },
  "bluetooth": {
-    "format": " {num_connections}",
+    "format": "{num_connections}",
     "format-disabled": "󰂲 {status}",
     "format-connected": "󰂱 {num_connections}",
     "tooltip-format": "Devices connected: {num_connections}",
