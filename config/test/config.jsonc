@@ -5,7 +5,7 @@
   "mod": "dock",
   "passthrough": false,
   "gtk-layer-shell": true,
-  "margin-top": 2,
+  "margin-top": 0,
   "margin-left": 350,
   "margin-right": 350,
   "margin-bottom": 0,
