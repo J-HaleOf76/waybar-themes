@@ -288,12 +288,7 @@ margin-bottom: 1px;
 background-color: transparent; 
 opacity: 1;
 color: @fg;
-animation: repeat;
-	animation: border-glow 3s linear infinite alternate;
-	animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+animation: border-glow 3s linear infinite alternate;
 }
 
 @keyframes border-glow {
