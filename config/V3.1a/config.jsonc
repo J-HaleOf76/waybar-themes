@@ -239,7 +239,7 @@
   },
  "mpris": {
     "format": "  {dynamic}",
-    "format-paused": "{status_icon} {dynamic}",
+    "format-paused": " {status_icon} {dynamic}",
     "interval": 1, 
     "dynamic-order": ["artist", "position", "length"], 
     "dynamic-importance-order": ["position", "length", "artist"],
