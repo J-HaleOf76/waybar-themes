@@ -21,8 +21,8 @@
     "custom/screenrecording-indicator",
     "custom/update",
     "custom/updatespacman",
-    "bluetooth",
-    "power-profiles-daemon"
+    "power-profiles-daemon",
+    "bluetooth"
 
   ],
   "modules-center": [
@@ -33,7 +33,8 @@
     "battery",
     "custom/separator3",
     "network",
-    "pulseaudio",
+    "pulseaudio#output",
+    "pulseaudio#input",
     "memory",
     "cpu",
     "custom/separator4",
@@ -144,7 +145,7 @@
         "tooltip-format": "Brightness:  {percent}%",
         "format-alt": "{percent}% {icon}",
         "format-alt-click": "click-right",
-        "format-icons": ["", ""],
+        "format-icons": ["󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
         "on-scroll-down": "brightnessctl s 5%-",
         "on-scroll-up": "brightnessctl s +5%"
     },
@@ -212,18 +213,31 @@
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth"
   },
-"pulseaudio": {
-    "format": "{icon}",
+"pulseaudio#input": {
+    "format-source": "",
+    "format-source-muted": "",
+    "format": "{format_source}",
+    "tooltip-format": "{format_source} {source_volume}%",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1,
+    "max-volume": 100,
     "on-click": "omarchy-launch-audio",
     "on-click-right": "pamixer -t",
-    "tooltip-format": "Playing at {volume}%",
-    "scroll-step": 5,
-    "format-muted": "",
-    "format-icons": {
-     // "headphone": "",
-     // "headset": "",
-      "default": [" ", " ", " "]
-    }
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%"
+  },
+  "pulseaudio#output": {
+    "format": "{icon}",
+    "tooltip-format": "{icon}",
+     "format-muted": "",
+      "format-icons": {
+      "default": ["", "", ""]
+    },
+    "max-volume": 100,
+    "scroll-step": 2,
+    "smooth-scrolling-threshold": 1,
+    "on-click": "omarchy-launch-audio",
+    "on-click-right": "pamixer -t"
   },
  "mpris": {
     "format": " {dynamic}",
@@ -251,7 +265,7 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": " 󰏖",
+      "has-updates": "󰏖",
       "updated": ""
     },
     "exec-if": "which waybar-module-pacman-updates",

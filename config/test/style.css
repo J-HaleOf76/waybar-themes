@@ -131,7 +131,7 @@ button:hover {
   min-width: 12px;
   color: @fg;
   opacity: 1;
-  padding: 0px 8px;
+  padding: 0px 6px;
   margin: 0px;
   
 }
@@ -233,8 +233,8 @@ tooltip label {
   opacity: 0.25;
   padding-bottom: 0px;
   padding-top: 1px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
   font-size: 10px;
   color: @fg;
 }
@@ -243,8 +243,8 @@ tooltip label {
   opacity: 0.25;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
   font-size: 10px;
   color: @fg;
 }
