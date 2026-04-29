@@ -259,16 +259,16 @@
       "deactivated": "󰷛"
     }
   },
-"custom/updates": {
-    "format": "{} {icon}",
+ "custom/updatespacman": {
+    "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-        "has-updates": "󰏖",
-        "updated": ""
+      "has-updates": "󰏖",
+      "updated": ""
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
-},
+  },
   "tray": {
     "icon-size": 13,
     "spacing": 2
