@@ -179,7 +179,8 @@ padding-top: 1px;
 #custom-omarchy {
     color: @red;
     font-size: 16px;
-    background: transparent;
+    background: @bg;
+    padding: 0 4px;
 }
 
 #custom-clock {
@@ -194,6 +195,10 @@ padding-top: 1px;
     padding: 2px 15px;
     margin: 2px 5px;
     color: @fg;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#mpris.playing {
     animation: hover-mirror 3s ease-in-out infinite alternate;
 }
 
