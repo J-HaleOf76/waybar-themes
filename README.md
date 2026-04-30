@@ -419,6 +419,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V3.1a/screenshot-2026-04-29_22-09-18.png?raw=true" />
 
+## V3.1b
+- island bar with some red accents effects
+##### V3.1b Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3.1b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V3.1b/screenshot-2026-04-30_14-08-22.png?raw=true" />
+
 ## V3.2
 - this Theme is recommended for darker Themes
 - all shadow & border with minimal concept
