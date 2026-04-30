@@ -194,12 +194,13 @@ padding-top: 1px;
     border-radius: 15px;
     padding: 2px 15px;
     margin: 2px 5px;
-    color: @fg;
+    color: @grey;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #mpris.playing {
     animation: hover-mirror 3s ease-in-out infinite alternate;
+    color: @fg;
 }
 
 #idle_inhibitor.activated {
