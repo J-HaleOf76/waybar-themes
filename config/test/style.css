@@ -51,7 +51,7 @@ window#waybar.empty .modules-center {
     background-color: transparent;
     border: none;
     padding: 0px 2px;
-    margin: 2px 5px;
+    margin: 2px 0px;
     border-radius: 50px;
 }
 
@@ -77,6 +77,11 @@ window#waybar.empty .modules-center {
 
 #workspaces button.empty {
     color: alpha(@bg, 0.5); 
+}
+
+#workspaces button.empty.active {
+    color: @bg;
+    background-color: @fg; 
 }
 
 #workspaces button:hover {
