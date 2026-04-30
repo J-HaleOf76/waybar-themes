@@ -183,14 +183,13 @@ padding-top: 1px;
 }
 
 #mpris {
-    background-color: @bg;              
-    border: 1px solid alpha(@fg, 0.2);  
-    border-radius: 15px;              
-    padding: 2px 15px; 
-    margin: 2px 5px; 
-    box-shadow: inset 0 -2px 0 -1px @red, 0px 2px 4px rgba(0, 0, 0, 0.3);
-    color: @fg;         
-    animation: border-glow 3s linear infinite alternate;
+    background-color: @bg;
+    border: 1px solid alpha(@fg, 0.2);
+    border-radius: 15px;
+    padding: 2px 15px;
+    margin: 2px 5px;
+    color: @fg;
+    animation: hover-mirror 3s ease-in-out infinite alternate;
 }
 
 #idle_inhibitor.activated {
@@ -204,7 +203,7 @@ padding-top: 1px;
 }
 
 #battery.charging, #battery.plugged {
-    color: #c98f1f;
+    color: #25e712;
 }
 
 #battery.warning:not(.charging) {
@@ -246,9 +245,15 @@ tooltip label {
 
 /* Animation */
 
-@keyframes border-glow {
-    from { border-bottom-color: @red; }
-    to   { border-bottom-color: rgba(223, 97, 36, 0.1); }
+@keyframes hover-mirror {
+    from {
+        box-shadow: inset 0 0px @red;
+        background-color: @bg;
+    }
+    to {
+        box-shadow: inset 0 -2px @red; /* Exakt dein Hover-Style */
+        background-color: @bg;
+    }
 }
 
 @keyframes blink-recording {
