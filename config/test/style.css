@@ -6,7 +6,7 @@
 @define-color grey #4f4f4f;
 @define-color grey2 #3f3f3f;
 
-/* Global Reset & Base Styles */
+/* Global Reset */
 
 * {
     margin: 0px;
@@ -156,7 +156,7 @@ window#waybar.empty .modules-center {
 
 
 
-/*  Spezifische Modul-Anpassungen */
+/*  Custom module adjustments */
 
 #tray {
 padding-top: 1px;
@@ -254,7 +254,7 @@ tooltip label {
     margin: 0 2px;
 }
 
-/* Animation */
+/* Animations */
 
 @keyframes hover-mirror {
     from {
