@@ -152,7 +152,7 @@ window#waybar.empty .modules-center {
 #custom-omarchy {
     min-width: 14px;
     color: @cyan;
-    padding: 0px 6px;
+    padding: 0px 4px;
     margin: 3px 2px;
     border-radius: 15px;
     transition: all 0.25s ease;
@@ -210,7 +210,7 @@ padding-top: 1px;
 
 #idle_inhibitor.activated,
 #idle_inhibitor.deactivated {
-
+    padding-left: 0px;
     font-size: 14px;
 }
 
@@ -253,7 +253,7 @@ tooltip label {
     opacity: 1;
     font-size: 10px;
     padding-top: 1px;
-    margin: 0 2px;
+    padding: 0 3px;
 }
 
 /* Animations */
