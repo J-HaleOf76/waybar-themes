@@ -173,6 +173,11 @@ window#waybar.empty .modules-center {
   transition: all 0.25s ease;
 }
 
+#battery,
+#idle_inhibitor.activated,
+#custom-updatespacman {
+    color: @magenta;
+}
 
 
 #tray {
