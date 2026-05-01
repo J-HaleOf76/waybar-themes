@@ -131,7 +131,7 @@
     "tooltip": true,
     "format-icons": {
       "performance": "",
-      "balanced": "",
+      "balanced": "󰺢",
       "power-saver": ""
     }
   },
