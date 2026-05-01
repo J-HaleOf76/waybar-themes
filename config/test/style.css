@@ -43,6 +43,7 @@ window#waybar.empty .modules-center {
     padding: 0px 2px; 
     margin: 5px 5px 2px 5px; 
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid alpha(@magenta-border, 0.2); 
 }
 
 .modules-center {
@@ -51,6 +52,8 @@ window#waybar.empty .modules-center {
     padding: 0px 0px; 
     margin: 5px 5px 2px 5px; 
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid alpha(@magenta-border, 0.2); 
+
 }
 
 
@@ -60,6 +63,8 @@ window#waybar.empty .modules-center {
     padding: 0px 2px; 
     margin: 5px 5px 2px 5px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid alpha(@magenta-border, 0.2); 
+
 }
 
 #workspaces {
@@ -201,6 +206,7 @@ padding-top: 1px;
     margin: 5px 5px 2px 5px; 
     color: @cyan;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid alpha(@magenta-border, 0.2); 
 }
 
 #mpris.playing {
