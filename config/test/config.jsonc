@@ -79,11 +79,7 @@
     "tooltip": false,
     "interval": "once"
 },
-"custom/separator4": {
-    "format": "", 
-    "tooltip": false
-},
-  "custom/weather": {
+ "custom/weather": {
     "format": "{}°",
     "tooltip": true,
     "interval": 60,
