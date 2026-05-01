@@ -111,7 +111,7 @@ window#waybar.empty #mpris {
 }
 #workspaces button:hover {
     background: linear-gradient(135deg, rgba(179, 136, 235, 0.4), rgba(130, 238, 255, 0.4));
-    color: transparent;
+    color: @bg;
     border-radius: 100px;
     box-shadow: none;
     border: none;
@@ -121,7 +121,7 @@ window#waybar.empty #mpris {
 #workspaces button.empty:hover {
     background: rgba(179, 136, 235, 0.25);
     border-radius: 100px;
-    color: transparent;
+    color: @magenta-border;
 }
 
 #tray,
