@@ -189,14 +189,19 @@ window#waybar.empty .modules-center {
     color: @magenta;
 }
 
+#power-profiles-daemon.balanced,
+#bluetooth {
+    padding:0 2px;
+}
 
 #tray {
 padding-top: 1px;
 }
 
 #custom-omarchy {
-    font-size: 16px;
+    font-size: 14px;
     color: #6a85ff;
+    padding-left: 2px;
 }
 
 #mpris {
@@ -217,7 +222,7 @@ padding-top: 1px;
 #idle_inhibitor.activated,
 #idle_inhibitor.deactivated {
     padding-left: 0px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #battery.charging, #battery.plugged {
