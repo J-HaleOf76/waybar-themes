@@ -38,6 +38,7 @@
     "cpu",
     "custom/separator",
     "custom/weather",
+    "custom/separator4",
     "custom/clock",
     "custom/separator2",
     "tray"
@@ -68,7 +69,7 @@
     "interval": "once"
 },
 "custom/separator4": {
-    "format": "", 
+    "format": "•", 
     "tooltip": false
 },
   "custom/weather": {
