@@ -5,10 +5,10 @@
 * {
   border: none;
   border-radius: 0px;
-  min-height: 0;
+  min-height: 20px;
   font-family: 'JetBrainsMono Nerd Font';
   font-weight: 500;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 window#waybar {
@@ -146,8 +146,6 @@ tooltip {
 #power-profiles-daemon.performance,
 #power-profiles-daemon.balanced,
 #power-profiles-daemon.power-saver {
-font-size: 13.5px;
-margin-top: 0px;
 padding-right: 8px;
 }
 
