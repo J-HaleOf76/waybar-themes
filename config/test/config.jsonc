@@ -27,6 +27,7 @@
     "custom/update",
     "custom/updatespacman",
     "power-profiles-daemon",
+    "backlight",
     "bluetooth"
     ]
   },
@@ -46,8 +47,6 @@
   "modules-right": [
     "network",
     "pulseaudio",
-    "custom/separator3",
-    "backlight",
     "custom/separator",
     "custom/weather",
     "custom/separator4",
