@@ -245,7 +245,7 @@ tooltip label {
     padding: 4px;
 }
 
-#custom-separator, #custom-separator2, #custom-separator3 {
+#custom-separator, #custom-separator2 {
     color: alpha(@fg, 0.3);
     opacity: 1;
     font-size: 10px;
