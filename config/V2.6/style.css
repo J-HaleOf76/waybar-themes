@@ -7,7 +7,6 @@
   font-size: 10px;
   font-weight: bold;
   min-height: 0px;
-  outline: 1px solid red;
   }
 
   /* --- Waybar ---*/
@@ -17,7 +16,7 @@
 
 
 window#waybar > box {
-  background-color: alpha(@background, 0.75);
+  background-color: alpha(@background, 0.5);
   box-shadow: 
     0 0 0 1px alpha(@foreground, 0.15),
     0 8px 20px alpha(#000000, 0.25);
@@ -53,20 +52,23 @@ tooltip {
   border: 0.5px solid alpha(@foreground, 0.8);
   color: @foreground;
   background-color: alpha(@background, 0.9);
-  margin-right: 2px;
+  margin-right: 0px;
+  padding-left: 4px; 
+  padding-right: 4px;
 }
 
 
  /* --- Modules ---*/
 
 .modules-right {
-  margin-left: 2px;
+  margin-left: 0px;  
+  padding-left: 4px; 
+  padding-right: 4px; 
   color: @foreground;
   border-radius: 24px;
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
-  padding-right: 4px;
  }
 
 
@@ -76,8 +78,8 @@ tooltip {
   border-radius: 24px;
   background-color: alpha(@background, 1);
   opacity: 0.95;
-  margin: 0px;
-  padding: 1px 1px 1px;
+  margin: 0 3px;
+  padding: 1px;
 }
 
 #workspaces button {
@@ -150,6 +152,15 @@ tooltip {
 }
 
 /* Specific Module */
+
+#custom-omarchy {
+  margin-left: 0;
+}
+
+#battery {
+  margin-right: 0;
+}
+
 #custom-update {
   padding-left: 0px;
   padding-right: 4px;

@@ -111,7 +111,7 @@
   },
  "cpu": {
     "interval": 2,
-    "format": " {usage}%",
+    "format": " {usage:02}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
     "memory": {
@@ -209,6 +209,7 @@
     "tooltip-format-charging": "{timeTo}",
     "interval": 5,
     "on-click": "omarchy-menu power",
+    "on-click-right": "notify-send -u low \"$(omarchy-battery-status)\"",
     "states": {
       "warning": 20,
       "critical": 10
@@ -285,8 +286,8 @@
     },
     "ignored-players": ["firefox", "chromium", "brave"]
   },
-  "custom/screenrecording-indicator": {
-    "on-click": "omarchy-cmd-screenrecord",
+   "custom/screenrecording-indicator": {
+    "on-click": "omarchy-capture-screenrecording",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
