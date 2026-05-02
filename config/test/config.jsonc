@@ -196,22 +196,21 @@
     "spacing": 1,
     "on-click": "omarchy-launch-wifi"
   },
-   "battery": {
+    "battery": {
     "format": "{capacity}% {icon}",
-    "format-charging": " {capacity}% {icon}",
-    "format-plugged": " {capacity}%",
-    "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-    ],
-    "format-full": "󱊦 {capacity}%",
-    "tooltip-format-discharging": "{timeTo}",
-    "tooltip-format-charging": "{timeTo}",
+    "format-discharging": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
     "interval": 5,
     "on-click": "omarchy-menu power",
+    "on-click-right": "notify-send -u low \"$(omarchy-battery-status)\"",
     "states": {
       "warning": 30,
       "critical": 15
