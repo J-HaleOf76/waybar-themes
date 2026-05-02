@@ -7,72 +7,43 @@
   border-radius: 0px;
   min-height: 0;
   font-family: 'JetBrainsMono Nerd Font';
-  font-weight: normal;
-   font-size: 11px;
+  font-weight: 500;
+  font-size: 11px;
 }
 
 window#waybar {
     background-color: transparent;
 }
+
 window#waybar > box {
-  border-radius: 10px;
-  border: 1px solid alpha(@foreground, 0.5);
-  margin: 0px 8px 2px 8px;
-  background-color: @background;
-  box-shadow: 1px 1px 2px 1px #101010;
-  transition-property: background-color;
-  transition-duration: .5s;
+  border-radius: 14px;
+  border: 1px solid alpha(@foreground, 0.1);
+  margin: 4px 8px;
+  background-color: alpha(@background, 0.7);
 }
 
-/* Left-Modules */
-
-.modules-left {
-  margin: 2px 2px;
-  padding: 0px 2px 0px;
-  background-color: alpha(@foreground, 0.3);
-  border-radius: 6px;
+#left1, #left2, #left3, #right1, #right2 {
+  background-color: alpha(@foreground, 0.05);
+  margin: 4px 2px;
+  padding: 0px 8px; 
 }
 
 #left1 {
-  background-color: @background;
-  border-radius: 6px;
-  margin: 2px 1px;
-  padding: 0px 2px 0px;
-  box-shadow: 0px 2px 2px #101010;
-  
+margin-left: 4px;
+  padding-left: 10px;
+  border-radius: 10px 4px 4px 10px;
 }
 
-#left2 {
-  background-color: @background;
-  border-radius: 6px;
-  padding: 0px 4px 0px;
-  margin: 2px 2px;
-  box-shadow: 0px 2px 2px #101010;
-}
-
-#left3 {
-  background-color: @background;
-  border-radius: 6px;
-  margin: 2px 2px;
-  padding: 0px 2px 0px;
-  box-shadow: 0px 2px 2px #101010;
-}
-
-.modules-right {
-  margin: 2px 2px;
-  padding: 0px 2px 0px; 
-  background-color: alpha(@foreground, 0.3);
-  border-radius: 6px;
+#left2, #left3, #right2 {
+ border-radius: 4px;
+  padding: 0px 10px; 
 }
 
 #right1 {
-  background-color: @background;
-  border-radius: 6px;
-  margin: 2px 1px;
-  padding: 0px 2px 0px;
-  box-shadow: 0px 2px 2px #101010;
+margin-right: 4px;
+  padding-right: 10px;
+  border-radius: 4px 10px 10px 4px;
 }
-
 
 /* --- Workspaces --- */
 
@@ -89,55 +60,39 @@ button:hover {
 
 
 #workspaces {
-  border-radius: 6px;
-  background-color: alpha(@foreground, 0.35);
-  opacity: 1;
-  margin: 2px 0px;
-  padding: 0px 1px 0px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 4px 0px;
+  padding: 0px;
 }
 
 #workspaces button {
-  padding: 0px 10px;
-  margin: 2px 2px;
-  box-shadow: 0px 2px 2px #101010;
+  padding: 0px 6px;
+  margin: 0px 2px;
   border-radius: 6px;
-  background-color: alpha(@background, 1);
-  color: @foreground; 
-  transition: all 0.15s ease-in-out;
-  opacity: 0.95;
+  color: alpha(@foreground, 0.5);
+  background-color: transparent;
 }
 
 #workspaces button.active {
-  color: @background;
-  padding: 0 10px;
-  margin: 2px 2px;
-  box-shadow: 0px 2px 2px #101010;
-  background-color: alpha(@foreground, 0.9);
-  border-radius: 6px;
-  opacity: 1.0;
-  animation: gradient_f 20s ease-in infinite;
-  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+background-color: alpha(@foreground, 0.1);
+  color: @foreground;
 }
 
 #workspaces button.empty {
-  background-color: alpha(@background, 1);
-  box-shadow: 0px 2px 2px #101010;
-  color: @foreground;
-  opacity: 0.45;
-  border-radius: 4px;
-  transition: all 0.15s ease-in-out;
-  padding: 0px 10px;
-  margin: 2px 2px;
+  color: alpha(@foreground, 0.2);
+  background-color: transparent;
+  box-shadow: none;
 }
 
 #workspaces button.empty.active {
-  background-color: alpha(@foreground, 0.9);
-  box-shadow: 0px 2px 2px #101010;
-  border-radius: 4px;
-  color: @background;
+  background-color: alpha(@foreground, 0.15);
+  color: alpha(@foreground, 0.8);
+  border-radius: 6px;
+  box-shadow: none;
+  margin: 0px 2px;
+  padding: 0px 6px;
   opacity: 1;
-   padding: 0px 10px;
-  margin: 2px 2px;
 }
 
 #workspaces button:hover.empty,
@@ -148,7 +103,7 @@ button:hover {
 }
 
 
-
+#mpris,
 #idle_inhibitor,
 #custom-updatespacman,
 #custom-omarchy,
@@ -162,7 +117,6 @@ button:hover {
 #custom-voxtype,
 #custom-voxtype.recording,
 #custom-voxtype.transcribing,
-#mpris
 #tray,
 #cpu,
 #memory,
@@ -170,16 +124,22 @@ button:hover {
 #backlight,
 #network,
 #power-profiles-daemon,
-#mpris,
 #bluetooth,
 #pulseaudio {
   min-width: 10px;
-  margin: 1px 1px 1px 1px;
-  padding: 0 4px;
+  margin: 0px;
+  padding: 0px 6px;
+  background-color: transparent;
 }
 
 tooltip {
   padding: 2px;
+}
+
+#custom-omarchy, #clock, #mpris {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px 4px;
 }
 
 #power-profiles-daemon,
@@ -215,7 +175,7 @@ padding-right: 8px;
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @transparent;
+    background-color: transparent;
 }
 #custom-voxtype {
   min-width: 12px;
@@ -264,26 +224,15 @@ tooltip label {
 
 
 #mpris {
-box-shadow: 1px 1px 1px 0px #101010;
-background-color: @background;
-border-radius: 4px;
-margin: 2px 2px;
-padding: 0px 4px 0px;
 color: @foreground;
-animation: repeat;
-	animation-name: blink;
-	animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  box-shadow: none;
+  animation: blink 3s linear infinite alternate;
 }
 
 @keyframes blink {
-    to {
-        color: #4a4a4a;
-        
-    }
+    to { color: alpha(@foreground, 0.3); }
 }
+
 #battery.warning {
   color: #c95d0f;
   background-color: @background;
