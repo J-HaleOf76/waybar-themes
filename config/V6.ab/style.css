@@ -233,9 +233,6 @@ tooltip label {
   animation-direction: alternate;
 }
 
-#mpris.paused {
-  color: alpha(@fg, 0.5);
-}
 
 /* screenrecording specific animation Module */
 
