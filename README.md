@@ -640,13 +640,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="1440" alt="V 6aa" src="https://github.com/user-attachments/assets/b947e80b-40d8-4884-918a-d0341ec47600" />
 
-## V6.ab
-- double-top-min bar - static colors - recommended for dark themes 
+## V6.ab <img src="https://img.shields.io/badge/reworked-df6124?style=flat&labelColor=000000" alt="Reworked">
+- top bar with hyprland/window module and glowing workspaces
 ##### V6.ab Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.ab/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1312" height="715" alt="screenshot-2026-01-14_21-24-34" src="https://github.com/user-attachments/assets/96d7730f-8829-49c4-a480-dde98d9f7e25" />
+<img width="1312" height="715" alt="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V6.ab/screenshot-2026-05-03_16-42-35.png?raw=true" />
 
 ## V6.ab2
 - new version of double-top-min bar - dynamic colors 
