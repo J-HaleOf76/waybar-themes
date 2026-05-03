@@ -19,8 +19,8 @@ window#waybar {
 
 #custom-omarchy {
   font-size: 15px;
-  margin: 5px;
-  padding: 0 5px;
+  margin: 3px 4px;
+  padding: 0 8px;
   border-radius: 5px;
   background-color: #27272a;
 }
@@ -34,8 +34,8 @@ window#waybar.empty #window{
 }
 
 #workspaces {
-  margin: 4px 0px;
-  padding: 0 4px;
+  margin: 3px 0px;
+  padding: 0 1px;
   background-color: #27272a;
   margin-left: 0px;
 }
@@ -95,7 +95,7 @@ window#waybar.empty #window{
 #custom-screenrecording-indicator {
   padding: 0 8px;
   color: #e6d8ba;
-  margin: 5px 5px 5px 0;
+  margin: 3px 4px 3px 0px;
 }
 
 #tray {
@@ -298,8 +298,8 @@ tooltip label {
 #mpris {
 color: #e6d8ba;
 font-size: 13px;
-padding-top: 1px;
-margin-right: 0px;
+margin: 3px 0px;
+margin-left: 2px;
 animation: repeat;
 	animation-name: blink;
 	animation-duration: 3s;
