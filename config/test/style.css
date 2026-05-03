@@ -214,14 +214,42 @@ tooltip label {
   animation-direction: alternate;
 }
 
-#pulseaudio.warning,
 #memory.warning,
 #cpu.warning {
     color: #e3c1b1; 
 }
 
-#pulseaudio.critical,
 #memory.critical,
 #cpu.critical {
     color: #df6124; 
+}
+
+
+@keyframes mpris_pulse {
+  from {
+    background-color: alpha(@fg, 0.1);
+  }
+  to {
+    background-color: alpha(@fg, 0.2);
+  }
+}
+
+#mpris {
+  padding: 0 8px;
+  margin: 3px 4px;
+  color: @fg;
+  background-color: alpha(@fg, 0.1);
+  border-radius: 2px;
+}
+
+#mpris.playing {
+  animation-name: mpris_pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#mpris.paused {
+  color: alpha(@fg, 0.5);
 }
