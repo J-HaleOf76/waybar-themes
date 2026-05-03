@@ -12,6 +12,7 @@
 </div>
 
 ## Usability
+
 <details>
 - These configs are Omarchy-based, including optional Omarchy-specific modules (logo, screen recorder, update module). Aside from that, they use standard modules (e.g. pacman updates, wttrbar), so <b>they can be used on any distro by simply removing the Omarchy modules and define colors.</b>
 
@@ -745,7 +746,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1541" height="447" alt="screenshot-2025-12-18_10-41-31" src="https://github.com/user-attachments/assets/e7bf64a5-6c98-4885-a2b5-94415fd10fda" />
 
-## V6.f
+## V6.f <img src="https://img.shields.io/badge/reworked-df6124?style=flat&labelColor=000000" alt="Reworked">
 - Display of the currently running window (app/title) per workspace (active one) & Click to return to a favorite theme
 ##### V6.f Install-command (copy and paste in your terminal): <br>
 ```bash
