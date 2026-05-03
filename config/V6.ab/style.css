@@ -153,7 +153,7 @@ padding: 0 2px;
 tooltip {
   background: @bg;
   border: 1px solid alpha(@fg, 0.2);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 tooltip label {
