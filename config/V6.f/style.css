@@ -23,7 +23,7 @@ window#waybar > box {
 }
 
 #left1, #left2, #left3, #right1, #right2 {
-  background-color: alpha(@foreground, 0.05);
+  background-color: alpha(@foreground, 0.1);
   margin: 4px 2px;
   padding: 0px 8px; 
 }
