@@ -38,10 +38,14 @@
     "format": " "
   },
   "hyprland/window": {
-    "format": "{initialTitle}",
-    "max-length": 25,
-    "separate-outputs": true
-  },
+    "format": "{title}",
+    "min-length": 20,
+    "max-length": 20,
+    "separate-outputs": true,
+    "rewrite": {
+        "^$:": "Desktop"
+    }
+},
   "custom/update": {
     "format": "",
     "exec": "omarchy-update-available",

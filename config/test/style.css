@@ -24,8 +24,9 @@ window#waybar  {
   padding: 0px 0px ;
   min-height: 28px;
   border-radius: 4px;
+  border: 1px solid alpha(@fg, 0.2);
   background-color: @bg;
-box-shadow: 
+  box-shadow: 
     0px 2px 4px rgba(0, 0, 0, 0.2),
     0px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -117,6 +118,10 @@ button:hover {
 
 #custom-omarchy {
   font-size: 16px;
+}
+
+#bluetooth {
+  margin-right: 0px;
 }
 
 #mpris,
