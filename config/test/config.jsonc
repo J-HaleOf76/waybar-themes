@@ -84,9 +84,9 @@
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
-      "performance": " ",
-      "balanced": " ",
-      "power-saver": " "
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
     }
   },
   "cpu": {
@@ -100,27 +100,16 @@
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "tooltip-format": "{percent}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "tooltip": true,
+        "tooltip-format": "Brightness:  {percent}%",
+        "format-alt": "{percent}% {icon}",
+        "format-alt-click": "click-right",
+        "format-icons": [" 󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
+        "on-scroll-down": "brightnessctl s 5%-",
+        "on-scroll-up": "brightnessctl s +5%"
+    },
   "clock": {
    "format": "{:%d %b %Y  %H:%M}",
     "format-alt": "{:%d %b %Y  %H:%M}",
