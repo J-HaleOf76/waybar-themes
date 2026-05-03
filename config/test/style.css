@@ -22,7 +22,7 @@ window#waybar  {
 #waybar > box {
   margin: 2px 10px 5px 10px;
   padding: 0px 0px ;
-  min-height: 28px;
+  min-height: 26px;
   border-radius: 4px;
   border: 1px solid alpha(@fg, 0.2);
   background-color: @bg;
