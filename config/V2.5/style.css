@@ -73,7 +73,7 @@ window#waybar.empty #window{
   color: #000;
 }
 
-#hyprland-window,
+#window,
 #clock,
 #battery,
 #cpu,
@@ -103,7 +103,11 @@ window#waybar.empty #window{
   background-color: #27272a;
 }
 
-#memory, #clock, #idle_inhibitor, #custom-update, #custom-updatespacman, #custom-voxtype, #custom-voxtype.recording {
+#window {
+  margin: 3px 2px;
+}
+
+#window, #memory, #clock, #idle_inhibitor, #custom-update, #custom-updatespacman, #custom-voxtype, #custom-voxtype.recording {
 background-color: #27272a;
 }
 
