@@ -170,8 +170,8 @@ tooltip label {
   min-width: 12px;
   margin-left: 5px;
   margin-right: 0;
-  font-size: 10px;
-  padding-bottom: 1px;
+  font-size: 12px;
+  padding-bottom: 0px;
 }
 
 #custom-screenrecording-indicator.active {
@@ -185,7 +185,7 @@ tooltip label {
 
 #custom-voxtype {
   min-width: 12px;
-  margin: 0 0 0 7.5px;
+  margin: 0 0 0 2.5px;
 }
 
 #custom-voxtype.recording {
@@ -195,23 +195,6 @@ tooltip label {
 #network.disconnected,
 #battery.warning {
   color: #c95d0f;
-}
-
-@keyframes blink2 {
-  to {
-    background-color: transparent;
-    color: #f53c3c;
-  }
-}
-
-#battery.critical:not(.charging) {
-  background-color: transparent;
-  color: #e6d8ba;
-  animation-name: blink2;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #memory.warning,
@@ -224,6 +207,7 @@ tooltip label {
     color: #df6124; 
 }
 
+/* mpris specific animation Module */
 
 @keyframes mpris_pulse {
   from {
@@ -252,4 +236,45 @@ tooltip label {
 
 #mpris.paused {
   color: alpha(@fg, 0.5);
+}
+
+/* screenrecording specific animation Module */
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #eb7087;
+  background-color: @bg;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @bg;
+    }
+}
+
+/* battery.critical specific animation Module */
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
