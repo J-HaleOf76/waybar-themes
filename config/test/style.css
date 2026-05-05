@@ -59,17 +59,17 @@ mpris.empty {
     padding: 0px 8px;
     margin: 0px 2px;
     color: @background;
-    border-radius: 100px;
-    background-color: alpha(@foreground, .45);
+    border-radius: 15px;
+    background-color: alpha(@foreground, .4);
 }
 
 #workspaces button.active {
     padding: 0px 8px;
     margin: 0px 2px;
-    background: alpha(@foreground, 1);
+    background: @foreground;
     color: @background;
     border-radius: 15px;
-    opacity: 0.95; 
+    opacity: 1; 
 }
 
 #workspaces button.empty {
