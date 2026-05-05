@@ -166,6 +166,7 @@
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} <i>{artist} - {title}</i>",
+    "ignored-players": ["chromium"],
     "max-length": 35,
     "player-icons": {
       "default": "🎵",
