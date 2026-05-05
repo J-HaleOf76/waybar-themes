@@ -128,7 +128,10 @@ mpris.empty {
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   font-size: 14px;
-  border-radius: 30px;
+  border-radius: 15px;
+  padding: 0 11px 0 10px;
+  margin-left: 2px;
+  margin-right: 0px;
 }
 
 #clock {
@@ -140,14 +143,6 @@ mpris.empty {
 
 .hidden {
   opacity: 0;
-}
-
-#custom-screenrecording-indicator,
-#custom-idle-indicator,
-#custom-notification-silencing-indicator {
-  border-radius: 10px;
-  min-width: 12px;
-  padding: 0 11px 0 10px;
 }
 
 #custom-screenrecording-indicator.active,
@@ -164,6 +159,10 @@ mpris.empty {
   border-radius: 15px;
   padding: 0 10px;
   margin: 5px 0 5px 0px;
+}
+
+#battery {
+  margin-left: 5px;
 }
 
 #mpris,
