@@ -134,7 +134,7 @@ opacity: 0.75;
 #custom-idle-indicator:hover,
 #custom-notification-silencing-indicator:hover,
 #custom-update:hover {
-  background-color: alpha(@foreground, .2);
+  background-color: alpha(@foreground, .4);
   transition: .7s;
 }
 
