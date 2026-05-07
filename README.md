@@ -764,7 +764,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="2560" height="359" alt="screenshot-2026-01-02_20-53-50" src="https://github.com/user-attachments/assets/9e5f77ec-ba1f-42c0-810d-46f5327ed3f4" />
 
 ## V7
-- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island V1.
+- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island version.
 ##### V7 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V7/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
@@ -773,7 +773,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7/laptopisland3.png?raw=true" />
 
 ## V7.1
-- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island V2.
+- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island version.
 ##### V7.1 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V7.1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
@@ -782,7 +782,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1/screenshot-2026-05-06_19-07-11.png?raw=true" />
 
 ## V7.1a
-- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me- Island V3.
+- Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island version.
 ##### V7.1a Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V7.1a/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
