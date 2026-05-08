@@ -202,7 +202,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="2560" height="469" alt="screenshot-2025-12-18_21-55-30" src="https://github.com/user-attachments/assets/0d994f4f-4b07-4fca-8f22-84f010ba1687" />
 
 ## V2.1-1
-- New version with static Rose Pine Dark color scheme - i call it "diffrent" - hope u like it!
+- New version with static Rose Pine Dark color scheme - i call it "different" - hope u like it!
 ##### V2.1-1 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.1-1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
