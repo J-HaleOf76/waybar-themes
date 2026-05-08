@@ -35,10 +35,8 @@
     "group/left1",
     "group/left2",
     "group/left3",
-    "group/left4",
-    "group/left5"
+    "group/left4"
     ],
-  "modules-left": ["group/left1", "group/left2", "group/left3", "group/left4", "group/left5"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["group/right1", "group/right2"],
 
