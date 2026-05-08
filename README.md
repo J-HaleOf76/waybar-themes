@@ -201,6 +201,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="469" alt="screenshot-2025-12-18_21-55-30" src="https://github.com/user-attachments/assets/0d994f4f-4b07-4fca-8f22-84f010ba1687" />
 
+## V2.1-1
+- New version with static Rose Pine Dark color scheme - i call it "diffrent" - hope u like it!
+##### V2.1-1 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.1-1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V2.1-1/screenshot-2026-05-09_01-04-22.png?raw=true" />
+
 ## V2.1a
 - [Oxocarbon-Theme](https://github.com/HANCORE-linux/omarchy-oxocarbon-theme) Waybar style with static colors (island-version) - Thanks to Astraeya for his window-script!
 ##### V2.1a Install-command (copy and paste in your terminal): <br>
