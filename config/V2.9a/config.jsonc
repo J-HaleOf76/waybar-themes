@@ -108,7 +108,7 @@
   "backlight": {
         "device": "intel_backlight",
         "rotate": 0,
-        "format": "<span style='italic' weight='900' underline='single' underline_color='#df6124'>bl</span> {percent}%",
+        "format": "bl {percent}%",
         "tooltip-format": "🌕 {percent}%",
             "format-icons": [
       "󰃜",
