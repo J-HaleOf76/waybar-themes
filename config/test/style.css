@@ -160,7 +160,7 @@ button:hover {
 #network.disconnected,
 #network.wifi,
 #network.ethernet {
-  padding: 0 12px 0 10px;
+  padding: 0 13px 0 10px;
 }
 
 #idle_inhibitor.deactivated {
