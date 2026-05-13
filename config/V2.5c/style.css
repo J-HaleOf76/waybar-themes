@@ -209,8 +209,6 @@ background-color: @accent;
 #custom-voxtype,
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
-    background-color: @red;
-    color: @bg;
     padding: 0 6px;       
     margin: 2px 1px;      
     border-radius: 2px;
@@ -220,8 +218,8 @@ background-color: @accent;
 #custom-voxtype,
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
-  color: @bg;
-  opacity: 1;;
+  color: @red;
+  opacity: 1;
 }
 
 .hidden {
