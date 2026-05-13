@@ -196,6 +196,8 @@ background-color: @accent;
 #bluetooth.connected,
 #battery,
 #battery.discharging,
+#battery.full,
+#battery.plugged,
 #battery.charging {
     background-color: @red;
     color: @bg;
