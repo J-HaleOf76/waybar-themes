@@ -194,12 +194,6 @@ background-color: @accent;
     color: @bg;
 }
 
-#custom-clock{
-    color: @bg;
-    background: @red;
-    font-weight: bold;
-}
-
 #custom-voxtype,
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
