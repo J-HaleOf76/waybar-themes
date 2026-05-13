@@ -150,6 +150,7 @@ button:hover {
     padding: 0 12px;
 }
 
+#backlight,
 #pulseaudio {
   padding: 0 10px 0 5px;
 }
@@ -264,6 +265,7 @@ tooltip label {
 
 #mpris {
     color: @bg;
+    background-color: @accent;
     margin: 2px 1px;
     padding: 0 0px;
     border-radius: 2px;
@@ -279,15 +281,11 @@ tooltip label {
     background-color: @accent;
 }
 
-#mpris {
-    background-color: @accent;
-}
-
 
 
 #network.disconnected,
 #battery.warning {
-  color: #c95d0f;
+  color: @red;
 }
 
 @keyframes blink2 {
@@ -307,14 +305,7 @@ tooltip label {
   animation-direction: alternate;
 }
 
-#pulseaudio.warning,
 #memory.warning,
 #cpu.warning {
-    color: #e3c1b1; 
-}
-
-#pulseaudio.critical,
-#memory.critical,
-#cpu.critical {
-    color: #df6124; 
+    color: @red; 
 }
