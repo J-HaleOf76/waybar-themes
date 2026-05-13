@@ -197,6 +197,7 @@ background-color: @accent;
   background-color: @gold;
 }
 
+#bluetooth.connected,
 #battery,
 #battery.discharging,
 #battery.charging {
