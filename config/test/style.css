@@ -156,8 +156,11 @@ button:hover {
 #pulseaudio {
   padding: 0 10px 0 5px;
 }
-#network {
-  padding: 0 15px 0 15px;
+#network,
+#network.disconnected,
+#network.wifi,
+#network.ethernet {
+  padding: 0 12px 0 10px;
 }
 
 #idle_inhibitor.deactivated {
@@ -284,40 +287,26 @@ tooltip label {
 
 #mpris {
     color: @bg;
-    margin: 2px 0px;
+    margin: 2px 1px;
     padding: 0 0px;
     border-radius: 2px;
     min-height: 20px;
     font-weight: 900;
-    transition: all 0.3s ease-in-out;
 }
 
 #mpris.playing {
-    background-color: @red;
-    animation: mpris_pulse 1.5s infinite alternate;
+    background-color: @gold;
 }
 
 #mpris.paused {
     background-color: @accent;
-    animation: none;
-    box-shadow: none;
 }
 
 #mpris {
     background-color: @accent;
 }
 
-@keyframes mpris_pulse {
-    from {
-        background-color: @red;
-        /* Kein Schatten am Startpunkt */
-    }
-    to {
-        /* Deutlich helleres Rot am Endpunkt für maximalen Kontrast */
-        background-color: #ff8e5a; 
-        /* Viel stärkerer und größerer Glow-Effekt */
-    }
-}
+
 
 #network.disconnected,
 #battery.warning {
