@@ -821,3 +821,12 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1a/587964689-938bdc30-bf5c-44c2-97c5-6fda343685f3.png?raw=true" />
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1a/587977168-7dd9b01d-55b1-49d6-806a-7fa293ca93bb.png?raw=true" />
+
+## V7.2
+- Top bar inspired by dothash quickshell bar – custom design modifications by me.
+##### V7.2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V7.2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.2/screenshot-2026-05-19_00-44-58.png?raw=true" />
+
