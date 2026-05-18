@@ -74,6 +74,7 @@ window#waybar {
 
 /* Muted/disabled state */
 #idle_inhibitor,
+#power-profiles-daemon,
 #tray,
 #bluetooth,
 #network.disconnected,
@@ -87,6 +88,18 @@ window#waybar {
   color: @gold;
 }
 
+#power-profiles-daemon.performance {
+  color: @love;
+}
+
+#power-profiles-daemon.balanced {
+  color: @gold;
+}
+
+#power-profiles-daemon.power-saver {
+  color: @foam;
+}
+
 #bluetooth.connected {
   color: @foam;
 }
@@ -95,6 +108,7 @@ window#waybar {
 #window,
 #custom-omarchy,
 #idle_inhibitor,
+#power-profiles-daemon,
 #mpris,
 #memory,
 #cpu,
@@ -102,13 +116,13 @@ window#waybar {
 #bluetooth,
 #network,
 #custom-weather,
-#custom-clock,
 #custom-voxtype,
 #custom-idle-indicator,
 #custom-notification-silencing-indicator,
 #custom-screenrecording-indicator,
 #backlight,
 #battery,
+#clock,
 #disk {
   padding: 0 8px;
 }
@@ -134,7 +148,7 @@ window#waybar {
   padding-left: 14px;
 }
 
-#custom-clock {
+#clock {
   color: @rose;
 }
 

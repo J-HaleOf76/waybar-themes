@@ -15,6 +15,7 @@
     "custom/notification-silencing-indicator",
     "custom/screenrecording-indicator",
     "tray",
+    "power-profiles-daemon",
     "idle_inhibitor",
     "backlight",
     "battery",
@@ -35,6 +36,9 @@
   ],
   "hyprland/workspaces": {
     "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "cursor": true,
     "format-icons": {
       "active": "󰮯",
       "default": "󰊠",
@@ -76,6 +80,16 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "󰾆"
+    }
   },
   "idle_inhibitor": {
     "format": "{icon}",
