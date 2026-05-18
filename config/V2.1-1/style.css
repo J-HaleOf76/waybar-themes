@@ -19,24 +19,26 @@
 
 #waybar > box {
   margin: 4px 10px;
-  padding: 2px;
+  padding: 1px;
   background-color: @base; 
   border: 1px solid alpha(@highlightMed, 0.3); 
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 
+     inset 3px 0 0 0px @iris,
+   inset -3px 0 0 0 @gold,
+  0px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* --- Single Module Config's ---*/
 #left1, #left2, #left3, #left4, 
 #right1, #right2, 
 .modules-center {
-  margin: 0px 4px;
+  margin: 0px 2px;
   padding: 0 10px;
   transition: all 0.2s ease-in-out;
 }
 
 #left1 {
   background-color: @overlay; 
-  box-shadow: inset 3px 0 0 0 @iris;
   border-radius: 2px;
 }
 
@@ -49,11 +51,6 @@ background-color: @overlay;
 #left3 {
 background-color: @surface; 
   box-shadow: inset 0 -3px 0 0 @pine;
-}
-
-#left4 {
-background-color: @surface; 
-  box-shadow: inset 0 -3px 0 0 @rose;
 }
 
 .modules-center {
@@ -69,8 +66,6 @@ background-color: @surface;
 
 #right2 {
   background-color: @overlay; 
-  margin-right: 2px; 
-box-shadow: inset -3px 0 0 0 @gold;
 }
 
 
@@ -88,7 +83,8 @@ window#waybar.empty #window {
 }
 
 #mpris {
-  background-color: transparent;
+  background-color: @surface; 
+  box-shadow: inset 0 -3px 0 0 @rose;
   color: @rose;
 }
 
@@ -171,7 +167,8 @@ window#waybar.empty #window {
 #network { color: @foam; } 
 #battery { color: @pine; }
 #backlight { color: @gold; }
-#idle_inhibitor { color: @gold; }
+#idle_inhibitor.activated { color: @gold; }
+#idle_inhibitor.deactivated { color: @muted; }
 #tray { color: @muted; }
 
 #custom-voxtype {

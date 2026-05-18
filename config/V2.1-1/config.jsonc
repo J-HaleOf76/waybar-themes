@@ -71,7 +71,7 @@
     }
   },
   "custom/omarchy": {
-    "format": "󰖂 ",
+    "format": "󱎂",
     "on-click": "omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
@@ -173,8 +173,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "󰛊",
-      "deactivated": "󰾫"
+      "activated": "󰛨",
+      "deactivated": "󰛩"
     }
   },
   "network": {
@@ -298,6 +298,7 @@
   "mpris": {
     "format": "󰋎 {artist} - {title}",
     "format-paused": "<i>{status_icon} {artist}</i>",
+    "format-disabled": "",
     "max-length": 20,
     "player-icons": {
       "default": "⏸",
