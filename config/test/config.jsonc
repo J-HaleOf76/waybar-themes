@@ -25,12 +25,12 @@
     "custom/updatespacman",
     "custom/separator",  
     "bluetooth",
+    "backlight",
     "power-profiles-daemon",
     "pulseaudio",
     "network",
     "memory",
     "cpu",
-    "backlight",
     "battery",
     "custom/separator2",
     "tray"
@@ -39,7 +39,7 @@
     "disable-scroll": true,
     "all-outputs": true,
     "cursor": true,
-      "format": "{icon}",
+    "format": "{icon}",
   "format-icons": {
     "1": "一",
     "2": "二",
@@ -169,9 +169,9 @@
     "on-click": "omarchy-launch-wifi"
   },
   "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
+    "format": "{icon} {capacity}%",
+    "format-discharging": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
     "format-plugged": " {capacity}%",
     "format-icons": {
       "charging": [
