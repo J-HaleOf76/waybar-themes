@@ -145,9 +145,21 @@ opacity: 0.65;
 opacity: 1;
 }
 
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver,
 #bluetooth {
-  padding: 0px;
+  padding: 0px 5px 0 0px;
   margin: 0px;
+}
+
+#power-profiles-daemon.performance {
+    padding: 0px 1px 0 0px;
+  margin: 0px;
+  color: @red;
+}
+
+#network {
+  margin-left: 10px;
 }
 
 #custom-separator2,
