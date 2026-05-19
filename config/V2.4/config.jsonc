@@ -273,7 +273,7 @@
         "format": "{}°",
         "tooltip": true,
         "interval": 1800,
-        "exec": "wttrbar --nerd --location yourlocation",
+        "exec": "wttrbar --nerd",
         "return-type": "json"
   },
 
