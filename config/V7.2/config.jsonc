@@ -12,6 +12,7 @@
     "hyprland/workspaces" 
   ],
   "modules-center": [
+    "custom/weather",
     "clock",
     "custom/idle-indicator",
     "custom/notification-silencing-indicator",
@@ -64,6 +65,13 @@
 "exec": "sh -c 'count=$(busctl --user get-property org.kde.StatusNotifierWatcher /StatusNotifierWatcher org.kde.StatusNotifierWatcher RegisteredStatusNotifierItems | sed -n \"s/^as \\([0-9]\\+\\).*/\\1/p\"); if [ \"${count:-0}\" -gt 0 ]; then echo \"{\\\"text\\\":\\\"|\\\",\\\"class\\\":\\\"show\\\"}\"; else echo \" {\\\"text\\\":\\\"\\\",\\\"class\\\":\\\"hide\\\"}\"; fi'",
     "return-type": "json",
     "interval": 2
+},
+"custom/weather": {
+    "format": "{}",
+    "tooltip": true,
+    "interval": 1800,
+    "exec": "wttrbar --nerd --custom-indicator \"{ICON}\"",
+    "return-type": "json"
 },
  "custom/omarchy": {
     "format": "⻯",
