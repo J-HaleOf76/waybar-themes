@@ -167,7 +167,7 @@
     ],
     "format": "{icon} {essid}",
     "format-wifi": "{icon} {essid}",
-    "format-ethernet": "󰈀 {ifname}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",

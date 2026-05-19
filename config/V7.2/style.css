@@ -153,13 +153,13 @@ opacity: 1;
 }
 
 #power-profiles-daemon.performance {
-    padding: 0px 1px 0 0px;
+  padding-right: 0px;
   margin: 0px;
   color: @red;
 }
 
 #network {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 #custom-separator2,
