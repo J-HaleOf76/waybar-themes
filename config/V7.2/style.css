@@ -121,6 +121,7 @@ button:hover {
 
 #custom-omarchy {
 opacity: 1;
+color: @red;
 }
 
 #clock {
