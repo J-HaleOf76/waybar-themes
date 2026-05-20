@@ -17,11 +17,11 @@
     "hyprland/workspaces",
     "custom/separator",
     "idle_inhibitor",
-    "bluetooth",   
+    "bluetooth",
+    "backlight",
     "network",
     "power-profiles-daemon",
-    "battery",
-    "backlight"
+    "battery"
   ],
   "modules-center": [
  "mpris"
@@ -149,9 +149,12 @@
 },
  "backlight": {
     "device": "intel_backlight",
-    "format": "<span color='#df6124'>bright</span> {percent}%",
+    "format": "{icon}",
     "tooltip": true,
-    "tooltip-format": "Brightness: {percent}%",
+    "tooltip-format": "Brightness:  {percent}%",
+    "format-alt": "{percent}% {icon}",
+    "format-alt-click": "click-right",
+    "format-icons": ["󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
     "on-scroll-down": "brightnessctl s 5%-",
     "on-scroll-up": "brightnessctl s +5%"
   },
@@ -228,7 +231,7 @@
     "on-click-right": "pamixer -t"
 },
  "mpris": {
-    "format": "<span color='#df6124'>playing</span> {dynamic}",
+    "format": "{dynamic}",
     "format-paused": "<span color='#df6124'>paused</span> {dynamic}",
     "interval": 5, 
     "dynamic-order": ["artist", "position", "length"], 
