@@ -169,7 +169,8 @@ opacity: 0.75;
 #custom-screenrecording-indicator.active,
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
-  color: #613f3f;
+  color: #af4b4b;
+  background: transparent;
 }
 
 #custom-omarchy,
