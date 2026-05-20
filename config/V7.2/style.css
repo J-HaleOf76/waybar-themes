@@ -133,6 +133,11 @@ opacity: 1;
 opacity: 1;
 }
 
+#custom-update {
+  margin: 2px 0 0 0px;
+  font-size: 12px;
+}
+
 #tray {
 opacity: 1;
 margin-left: 0px;
@@ -174,8 +179,8 @@ opacity: 1;
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   min-width: 12px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1px;
+  margin-right: 1px;
   font-size: 12px;
   padding-bottom: 0px;
 }
@@ -210,6 +215,7 @@ tooltip label {
 
 #custom-voxtype {
   min-width: 12px;
+  font-size: 12px;
   margin: 0 0 0 2.5px;
 }
 
@@ -230,6 +236,7 @@ tooltip label {
 
 #custom-screenrecording-indicator.active {
   color: #eb7087;
+  font-size: 12px;
   animation-name: blink-recording;
   animation-duration: 0.5s;
 }
