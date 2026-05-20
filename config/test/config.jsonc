@@ -6,8 +6,8 @@
   "passthrough": false,
   "gtk-layer-shell": true,
   "margin-top": 0,
-  "margin-left": 250,
-  "margin-right": 250,
+  "margin-left": 50,
+  "margin-right": 50,
   "margin-bottom": 0,
   "modules-left": [
     "custom/weather",
@@ -49,7 +49,7 @@
     "cursor": true,
     "format": "{icon}",
       "persistent-workspaces": {
-      "*": 6
+      "*": 1
     }
   },
 
