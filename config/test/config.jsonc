@@ -18,15 +18,15 @@
     "custom/separator",
     "idle_inhibitor",
     "tray",
+    "power-profiles-daemon",
+    "bluetooth",
     "custom/separator",
     "custom/update",
     "custom/updatespacman",
     "custom/idle-indicator",
     "custom/voxtype",
     "custom/notification-silencing-indicator",
-    "custom/screenrecording-indicator",
-    "bluetooth",
-    "power-profiles-daemon",
+    "custom/screenrecording-indicator",  
     "backlight",
     "battery"
   ],
@@ -131,7 +131,7 @@
     "tooltip": true,
     "format-icons": {
       "performance": "",
-      "balanced": "",
+      "balanced": " ",
       "power-saver": ""
     }
   },

@@ -41,7 +41,6 @@ window#waybar.empty .modules-center {
 .modules-center {
 margin: 0;
 padding: 0;
-
 }
 
 .modules-left,
@@ -151,7 +150,7 @@ margin-top: 1px;
 }
 
 #power-profiles-daemon {
-  margin: 0px 4px 0 0;
+  margin: 0px 0px 0 0;
   padding: 0px 4px;
 }
 
@@ -173,7 +172,7 @@ margin-top: 1px;
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   font-size: 12px;
-  padding: 0 5px 0 2.5px;
+  padding: 0 3px 0 6px;
   margin: 0 0 0 2.5px;
 }
 
