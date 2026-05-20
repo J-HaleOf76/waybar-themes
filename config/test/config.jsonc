@@ -16,6 +16,10 @@
     "custom/separator",
     "hyprland/workspaces",
     "custom/separator",
+    "custom/voxtype",
+    "custom/idle-indicator",
+    "custom/notification-silencing-indicator",
+    "custom/screenrecording-indicator",
     "idle_inhibitor",
     "bluetooth",
     "backlight",
@@ -36,10 +40,6 @@
     "custom/update",
     "custom/updatespacman",
     "tray",
-    "custom/voxtype",
-    "custom/idle-indicator",
-    "custom/notification-silencing-indicator",
-    "custom/screenrecording-indicator",
     "custom/omarchy"
   ],
 
