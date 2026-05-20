@@ -2,7 +2,6 @@
 @define-color bg @background;
 @define-color fg @foreground;
 @define-color red #df6124;
-@define-color grey #4f4f4f;
 
 
 * {
@@ -28,7 +27,7 @@ window#waybar  {
 box-shadow: 
     0px 2px 4px rgba(0, 0, 0, 0.2),
     0px 2px 4px rgba(0, 0, 0, 0.15);
-border: 1px ridge alpha(@fg, 0.2);
+border: 1px solid alpha(@fg, 0.2);
 }
 
 window#waybar.empty .modules-center {
@@ -80,7 +79,7 @@ button:hover {
 #workspaces button.active {
     opacity: 1;
     color: @red;
-    border-bottom: 2px solid @red;
+    border-bottom: 1px solid @red;
     border-radius: 1px;
     background: transparent;
     transition: 0.1s;
@@ -88,14 +87,14 @@ button:hover {
 }
 
 #workspaces button.empty {
-    color: @grey;
+    color: alpha(@fg, 0.2);
 }
 
 #mpris:hover,
 #workspaces button:hover {
     opacity: 1;
     color: @red;
-    border-bottom: 2px solid @red;
+    border-bottom: 1px solid @red;
     background: transparent;
     transition: 0.1s; 
     margin-bottom: 1px;
@@ -139,14 +138,10 @@ button:hover {
 }
 
 #idle_inhibitor.deactivated {
-  font-size: 14px;
-  margin: 0px 2px;
-  color: @grey;
+  color: alpha(@fg, 0.4);
 }
 
 #idle_inhibitor.activated {
-  font-size: 14px;
-    margin: 0px 2px;
     color: @red;
 }
 
@@ -156,7 +151,7 @@ margin-top: 1px;
 }
 
 #power-profiles-daemon {
-  margin: 0px 2px;
+  margin: 0px 4px 0 0;
   padding: 0px 4px;
 }
 
@@ -178,8 +173,8 @@ margin-top: 1px;
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   font-size: 12px;
-  padding: 0 2.5px 0 2.5px;
-    margin: 0 0 0 2.5px;
+  padding: 0 5px 0 2.5px;
+  margin: 0 0 0 2.5px;
 }
 
 #custom-voxtype.recording,
@@ -197,7 +192,7 @@ tooltip {
  padding: 4px;
  background: @bg;
  font-size: 10px;
- border: 1px solid @grey;
+ border: 1px solid alpha(@fg, 0.2);
  border-radius: 6px;
  
 }
@@ -208,17 +203,17 @@ tooltip label {
 
 #custom-separator2,
 #custom-separator {
-  opacity: 0.25;
+  opacity: 0.2;
   padding-bottom: 0px;
-  padding-top: 1px;
+  padding-top: 2px;
   padding-left: 3px;
   padding-right: 3px;
-  font-size: 10px;
+  font-size: 12px;
   color: @fg;
 }
 
 #custom-separator3 {
-    color: alpha(@fg, 0.5);
+    color: alpha(@fg, 0.4);
     opacity: 1;
     font-size: 14px;
     padding-top: 0px;
