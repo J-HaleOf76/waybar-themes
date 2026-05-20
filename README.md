@@ -811,7 +811,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V7.1/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 <img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1/screenshot-2026-05-06_19-07-11.png?raw=true" />
-<img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1/screenshot-2026-05-06_19-07-11.png?raw=true" />
+<img src="https://github.com/HANCORE-linux/waybar-themes/blob/main/config/V7.1/screenshot-2026-05-06_19-02-12.png?raw=true" />
 
 ## V7.1a
 - Base Waybar config/style derived from Omarchy by DHH – custom design modifications by me - Island version.
