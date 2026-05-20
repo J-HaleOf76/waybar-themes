@@ -141,7 +141,7 @@ button:hover {
 }
 
 #backlight {
-  padding-left: 0px;
+  padding-left: 2px;
 }
 #custom-omarchy {
   color: @red;
