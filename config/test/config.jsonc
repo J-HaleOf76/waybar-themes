@@ -25,7 +25,7 @@
     "power-profiles-daemon",
     "backlight",
     "network",
-     "battery"
+    "battery"
   ],
   "modules-center": [
  "mpris"
@@ -48,8 +48,20 @@
     "all-outputs": true,
     "cursor": true,
     "format": "{icon}",
+    "format-icons": {
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十"
+  },
       "persistent-workspaces": {
-      "*": 1
+      "*": 10
     }
   },
 
@@ -154,7 +166,7 @@
     "on-scroll-up": "brightnessctl s +5%"
   },
    "clock": {
-    "format": "<span color='#df6124'>{0:%H:%M}</span> <span size='small' color='#4b4e55'><i>{0:%a, %b %d}</i></span>",
+    "format": "<span color='#df6124'>{0:%H:%M}</span> <span size='small' color='#616367'><i>{0:%a, %b %d}</i></span>",
     "format-alt": "{:L%d %B W%V %Y}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
