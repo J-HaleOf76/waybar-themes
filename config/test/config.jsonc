@@ -107,10 +107,15 @@
     "signal": 10,
     "return-type": "json"
   },
-  "power-profiles-daemon": {
-    "format": "<span color='#df6124'>profile</span> {profile}",
+ "power-profiles-daemon": {
+    "format": "<span color='#df6124'>profile</span> {icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true
+    "tooltip": true,
+    "format-icons": {
+      "performance": "perf",
+      "balanced": "bal",
+      "power-saver": "save"
+    }
   },
 "cpu": {
     "interval": 5,
@@ -165,10 +170,10 @@
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
 },
   "network": {
-    "format": "<span color='#df6124'>net</span> online",
+    "format": "<span color='#df6124'>net</span> on",
     "format-wifi": "<span color='#df6124'>wifi</span> {essid}",
-    "format-ethernet": "<span color='#df6124'>eth</span> online",
-    "format-disconnected": "<span color='#df6124'>net</span> offline",
+    "format-ethernet": "<span color='#df6124'>eth</span> on",
+    "format-disconnected": "<span color='#df6124'>net</span> off",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
