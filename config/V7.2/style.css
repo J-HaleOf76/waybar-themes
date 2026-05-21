@@ -114,18 +114,19 @@ button:hover {
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 20px;
-  padding: 0px;
-  margin: 0px 6px;
+  min-width: 14px;
+  padding: 0px 4px;
+  margin: 0px 2px 0px 2px;
   opacity: 0.85;
 }
 
 #custom-omarchy {
 opacity: 1;
 color: @red;
-padding: 0px 0 0 6px;
+padding: 0px 2px 0 6px;
 margin: 0px;
 }
+
 
 #clock {
 opacity: 1;
@@ -135,6 +136,11 @@ opacity: 1;
 opacity: 1;
 }
 
+#bluetooth {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 #custom-update {
   margin: 2px 0 0 0px;
   font-size: 12px;
@@ -142,7 +148,7 @@ opacity: 1;
 
 #tray {
 opacity: 1;
-padding: 0px 0 0 0px;
+padding: 2px 0 0 0px;
 }
 
 #idle_inhibitor.deactivated {
@@ -153,10 +159,10 @@ opacity: 0.65;
 opacity: 1;
 }
 
+
 #power-profiles-daemon.balanced,
-#power-profiles-daemon.power-saver,
-#bluetooth {
-  padding: 0px 5px 0 0px;
+#power-profiles-daemon.power-saver{
+  padding: 0px 10px 0 5px;
   margin: 0px;
 }
 
