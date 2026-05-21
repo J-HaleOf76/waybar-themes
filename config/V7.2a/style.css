@@ -116,6 +116,7 @@ button:hover {
 #pulseaudio,
 #pulseaudio.input,
 #pulseaudio.output,
+#custom-expand-icon,
 #custom-weather,
 #custom-gpu-usage,
 #custom-updatespacman,
@@ -128,6 +129,7 @@ button:hover {
   padding: 0px 4px;
   margin: 0px 2px 0px 2px;
 }
+
 
 #custom-omarchy {
   color: @red;
@@ -143,6 +145,7 @@ button:hover {
 #idle_inhibitor.activated {
     color: @red;
 }
+
 
 
 #tray {
@@ -200,6 +203,7 @@ tooltip label {
     font-weight: normal;
 }
 
+
 #custom-separator2,
 #custom-separator {
   opacity: 0.2;
@@ -211,10 +215,11 @@ tooltip label {
   color: @fg;
 }
 
+#custom-expand-icon,
 #custom-separator3 {
     color: alpha(@fg, 0.4);
     opacity: 1;
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 0px;
     padding: 0 1px;
 }

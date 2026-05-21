@@ -17,7 +17,6 @@
     "hyprland/workspaces",
     "custom/separator",
     "idle_inhibitor",
-    "tray",
     "power-profiles-daemon",
     "bluetooth",
     "custom/separator",
@@ -34,6 +33,7 @@
  "mpris"
   ],
   "modules-right": [
+    "group/tray-expander",
     "custom/gpu-usage",  
     "network",
     "cpu",
@@ -154,12 +154,12 @@
         "critical": 80
     }
 },
-  "custom/gpu-usage": {
-    "exec": "gpu-usage-waybar --text-format '<span color=\"#df6124\">gpu</span> {gpu_utilization}% <span color=\"#df6124\">vram</span> {mem_utilization}%'",
+ "custom/gpu-usage": {
+    "exec": "gpu-usage-waybar --text-format '<span color=\"#df6124\">gpu</span> {gpu_utilization}% <span color=\"#df6124\">vram</span> {mem_utilization}%' | sed -E 's/ ([0-9])%/ 0\\1%/g'",
     "return-type": "json",
     "format": "{}",
     "on-click": "ghostty -e nvtop"
-},
+  },
  "backlight": {
     "device": "intel_backlight",
     "format": "{icon}",
@@ -275,6 +275,21 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
+  },
+    "group/tray-expander": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "tray-group-item"
+    },
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ]
+  },
+  "custom/expand-icon": {
+    "format": "",
+    "tooltip": false
   },
   "tray": {
     "icon-size": 13,
