@@ -74,10 +74,9 @@ button:hover {
 #workspaces button.empty:hover, 
 #workspaces button:hover {
     background: transparent;
-    color: alpha(@foreground, 1);
+    color: @red;
     opacity: 1.0;
-    animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: 0.1s;
 }
 
 #workspaces button.empty {
@@ -88,7 +87,7 @@ button:hover {
 
 #workspaces button.empty.active {
   opacity: 1;
-  color: @foreground;
+  color: @red;
   transition: all 0.15s ease;
 }
 
